@@ -38,7 +38,7 @@ body {
 }
 
 .ui.vertical.stripe {
-    padding: 8em 0em;
+    padding: 2em 0em;
 }
 
 .ui.vertical.stripe h3 {
@@ -67,8 +67,8 @@ body {
 }
 
 .quote.stripe.segment .grid .column {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .footer.segment {
