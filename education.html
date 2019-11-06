@@ -1,1 +1,111 @@
-This page is under construction.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tyler Veeman</title>
+
+</head>
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="custom.css">
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+
+<body id="root">
+<div class="ui large top fixed hidden menu">
+    <div class="ui container">
+        <a class="item" href="index.html">Home</a>
+        <a class="item" href="employment.html">Employment</a>
+        <a class="active item">Education</a>
+        <a class="item" href="projects.html">Projects</a>
+    </div>
+</div>
+
+<div class="pusher">
+
+    <div class="ui inverted landing-image vertical masthead center aligned segment">
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item"><i class="sidebar icon"></i></a>
+                <a class="item" href="index.html">Home</a>
+                <a class="item" href="employment.html">Employment</a>
+                <a class="active item">Education</a>
+                <a class="item" href="projects.html">Projects</a>
+            </div>
+        </div>
+
+        <div class="ui text container">
+            <h1 class="ui inverted header">Under Construction</h1>
+        </div>
+    </div>
+
+    <div class="ui vertical stripe quote segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row">
+                <div class="column">
+                    <h3>Email</h3>
+                    <p><a href="mailto:tylerrodveeman@gmail.com">tylerrodveeman@gmail.com</a></p>
+                </div>
+                <div class="column">
+                    <h3>Mobile</h3>
+                    <p>(503) 868-9270</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <div class="eight wide column">
+                    <h3 class="ui header">About Me</h3>
+                    <p style="color: darkslategray;">
+                        From a very early age I knew exactly what I wanted to be when I grew up: a computer programmer. What took me a while to realize, however, was that I had many more passions beyond that.<br><br>
+                        High school showed me my love for music. Everything from creating, dancing to, playing, or singing music, to simply just listening to it helped me develop a sense of community and started my journey on improving my social skills.<br><br>
+                        After moving to the Bay Area from my tiny town of St. Paul, Oregon, which had a population of about 300 people, I further developed my social skills. This was especially evident after being hired at Teavana, as I got to work with a variety of people from all walks of life. My time at Teavana and eventually Hollister gave me the leadership and management experience I will need in order to lead a project of my own some day.<br><br>
+                        Being in the Bay Area also showed me my passion for people, specifically from a human rights standpoint. Growing up gay and liberal in a very conservative town and household led me to become very passionate about people's rights as human beings, and the need to advocate for change in order to make the world a better place.<br><br>
+                        While obtaining my B.S. in Computer Science from San Jose State University, I led and worked on projects ranging from simple whiteboard applications, to programs that could read a hand-written math equation using neural networks. This, along with my troubleshooting and QA testing for Cruise's autonomous vehicles have helped put me on the career path that I want to continue to pursue.<br><br>
+                        I hope to use my knowledge and drive in the computer programming industry to further my passions for myself and for others.
+                    </p>
+                </div>
+                <div class="six wide right floated column">
+                    <img
+                            class="ui large bordered rounded image"
+                            src="assets/img/IMG_5768.jpg"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                <p>This website was created by Tyler Veeman using a Semantic-UI template, and is running on an AWS server. For a deeper look, check out the source code on the projects page.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // fix menu when passed
+        $(".masthead").visibility({
+            once: false,
+            onBottomPassed: function() {
+                $(".fixed.menu").transition("fade in");
+            },
+            onBottomPassedReverse: function() {
+                $(".fixed.menu").transition("fade out");
+            }
+        });
+
+        // create sidebar and attach to menu open
+        $(".ui.sidebar").sidebar("attach events", ".toc.item");
+    });
+</script>
+
+</body>
+</html>
