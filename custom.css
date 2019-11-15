@@ -12,6 +12,10 @@ body {
     background-size: cover !important;
 }
 
+.landing-image-small {
+    background-image: url("assets/img/pawel-czerwinski-1574309-unsplash.jpg");
+}
+
 .masthead.segment {
     min-height: 600px;
     padding: 1em 0em;
