@@ -12,6 +12,15 @@ body {
     background-size: cover !important;
 }
 
+.pagehead {
+    min-height: 300px;
+    padding: 1em 0em;
+}
+
+.pagehead h1.ui.header {
+    font-size: 3em
+}
+
 .masthead.segment {
     min-height: 600px;
     padding: 1em 0em;
