@@ -1,2 +1,8 @@
 .vsgitbuild
 .vscode/launch.json
+.idea
+semantic
+package-lock.json
+package.json
+semantic.json
+node_modules
