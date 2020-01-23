@@ -1,1 +1,176 @@
-This page is under construction.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tyler Veeman</title>
+
+</head>
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="custom.css">
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+
+<body id="root">
+<div class="ui large top fixed hidden menu">
+    <div class="ui container">
+        <a class="item" href="index.html">Home</a>
+        <a class="active item">Employment</a>
+        <a class="item" href="education.html">Education</a>
+        <a class="item" href="projects.html">Projects</a>
+    </div>
+</div>
+
+<div class="pusher">
+
+    <div class="ui inverted landing-image pagehead vertical center aligned segment">
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item"><i class="sidebar icon"></i></a>
+                <a class="item" href="index.html">Home</a>
+                <a class="active item">Employment</a>
+                <a class="item" href="education.html">Education</a>
+                <a class="item" href="projects.html">Projects</a>
+            </div>
+        </div>
+
+        <div class="ui text container">
+            <h1 class="ui inverted header">Employment</h1>
+        </div>
+    </div>
+
+    <div class="ui centered cards" style="padding: 50px">
+
+        <a class="card" href="https://www.getcruise.com">
+          <div class="image">
+            <img src="assets/img/cruise.png">
+          </div>
+          <div class="content">
+            <div class="header">Autonomous Vehicle Test Operator</div>
+            <div class="meta">
+              <span>Cruise</span>
+            </div>
+            <div class="description">
+                Troubleshooting, testing, and providing quality assurance for GM Cruise’s autonomous vehicles on the busy streets of San Francisco.
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              September 2019 - Present
+            </span>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.hollisterco.com/">
+            <div class="image">
+              <img src="assets/img/hollister.png">
+            </div>
+            <div class="content">
+              <div class="header">Stock Manager</div>
+              <div class="meta">
+                <p>Hollister Co.</p>
+              </div>
+              <div class="description">
+                  Managed inventory and team of stock associates to replenish the sales floor and stock room. Enforced organization and trained associates on best customer service practices. Maintained strong product knowledge in a rapidly changing environment.
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                February 2018 - July 2019
+              </span>
+            </div>
+        </a>
+
+        <a class="card" href="https://www.teavana.com">
+            <div class="image">
+              <img src="assets/img/teavana.png">
+            </div>
+            <div class="content">
+              <div class="header">Assistant Store Manager</div>
+              <div class="meta">
+                <p>Teavana</p>
+              </div>
+              <div class="description">
+                Managed store and shift teams to ensure we achieved both sales and customer service goals. Maintained extensive product knowledge, and provided an educational customer experience.
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                September 2015 - January 2018
+              </span>
+            </div>
+        </a>
+
+        <a class="card" href="https://www.bgclub.org/technology">
+          <div class="image">
+            <img src="assets/img/americorps.jpg">
+          </div>
+          <div class="content">
+            <div class="header">Google Code Corps Summer Associate</div>
+            <div class="meta">
+              <p>Americorps VISTA</p>
+            </div>
+            <div class="description">
+              Taught students at the Boys and Girls Clubs of Silicon Valley how to code using Google's CS First curriculum and M.I.T.'s Scratch language.
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              June 2017 - August 2017
+            </span>
+          </div>
+      </a>
+
+      <a class="card" href="https://www.veterinaryservicesoforegon.com">
+        <div class="image">
+          <img src="assets/img/vso.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Vet Office Assistant</div>
+          <div class="meta">
+            <p>Veterinary Services of Oregon</p>
+          </div>
+          <div class="description">
+            Completed secretary tasks such as answering phone calls and organizing paperwork. Cleaned and organized clinic, kept track of inventory and shipments, and maintained computer software.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            June 2013 - August 2015
+          </span>
+        </div>
+    </a>
+
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                <p>This website was created by Tyler Veeman using a Semantic-UI template, and is running on an AWS server. For a deeper look, check out the source code on the projects page.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // fix menu when passed
+        $(".masthead").visibility({
+            once: false,
+            onBottomPassed: function() {
+                $(".fixed.menu").transition("fade in");
+            },
+            onBottomPassedReverse: function() {
+                $(".fixed.menu").transition("fade out");
+            }
+        });
+
+        // create sidebar and attach to menu open
+        $(".ui.sidebar").sidebar("attach events", ".toc.item");
+    });
+</script>
+
+</body>
+</html>
