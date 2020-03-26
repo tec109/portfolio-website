@@ -3,6 +3,30 @@ body {
     -moz-font-smoothing: grayscale;
 }
 
+.projects.bold {
+    color: rgb(184, 0, 159);
+    font-weight: 700;
+}
+
+.projects.source {
+    color: rgb(57, 0, 104);
+    font-size: 16px;
+}
+
+.button.size_correct {
+    height: 35px;
+    width: 100px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .hidden.menu {
     display: none;
 }
